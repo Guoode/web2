@@ -5,27 +5,27 @@
     <!-- 左 -->
     <div class="flex-1 mr-5 bg-opacity-50 bg-slate-800 p-3 flex flex-col">
       <!-- 横向柱状图 -->
-      <HorizontalBar />
+      <HorizontalBar class="h-1/3 box-border pb-4" />
       <!-- 雷达图 -->
-      <RadarBar />
+      <RadarBar class="h-1/3 box-border pb-4" />
       <!-- 数据传递关系图 -->
-      <Relation />
+      <Relation class="h-1/3" />
     </div>
     <!-- 中 /> -->
     <div class="w-1/2 mr-2 flex flex-col">
       <!-- 数据展示图 -->
-      <TotalData />
+      <TotalData class="bg-opacity-50 bg-slate-800 p-3" />
       <!-- 地图可视化 -->
-      <MapChart />
+      <MapChart class="bg-opacity-50 bg-slate-800 p-3 mt-4 flex-1" />
     </div>
     <!-- 右 /> -->
     <div class="flex-1 bg-opacity-50 bg-slate-800 p-3 flex flex-col">
       <!-- 竖向柱状图 -->
-      <VerticalBar />
+      <VerticalBar class="h-1/3 box-border pb-4" />
       <!-- 环形资源占比图 -->
-      <RingBar />
+      <RingBar class="h-1/3 box-border pb-4" />
       <!-- 数据云图 -->
-      <WordCloud />
+      <WordCloud class="h-1/3 box-border" />
     </div>
   </div>
 </template>
