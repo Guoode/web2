@@ -39,6 +39,7 @@ import MapChart from "./components/MapChart.vue";
 import VerticalBar from "./components/VerticalBar.vue";
 import RingBar from "./components/RingBar.vue";
 import WordCloud from "./components/WordCloud.vue";
+import "./apis/visualization.js";
 </script>
 
 <style scoped></style>
