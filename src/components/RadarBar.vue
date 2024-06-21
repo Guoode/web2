@@ -1,5 +1,5 @@
 <template>
-  <div>雷达图</div>
+  <div>左雷达图</div>
 </template>
 
 <script setup></script>

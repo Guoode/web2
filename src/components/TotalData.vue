@@ -1,5 +1,5 @@
 <template>
-  <div>数据展示图</div>
+  <div>中上数据展示图</div>
 </template>
 
 <script setup></script>

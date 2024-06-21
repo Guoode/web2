@@ -1,5 +1,5 @@
 <template>
-  <div>竖向柱状图</div>
+  <div>右竖向柱状图</div>
 </template>
 
 <script setup></script>
