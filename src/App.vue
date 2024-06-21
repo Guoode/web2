@@ -7,10 +7,11 @@
     <div class="flex-1 mr-5 bg-opacity-50 bg-slate-800 p-3 flex flex-col h-1/2">
       <RadarBar class="h-full box-border pb-4" :data="data.riskData" />
     </div>
-
-    <!-- 地图可视化 -->
-    <div class="w-1/2 flex flex-col">
-      <MapChart class="bg-opacity-50 bg-slate-800 p-3 flex-1" />
+    <div class="w-1/2 mr-2 flex flex-col">
+      <!-- 中上 -->
+      <TotalData class="bg-opacity-50 bg-slate-800 p-3 h-1/5" />
+      <!-- 中下-->
+      <MapChart class="bg-opacity-50 bg-slate-800 p-3 mt-2 flex-1" />
     </div>
 
     <!-- 右 -->
@@ -22,6 +23,7 @@
 
 <script setup>
 import RadarBar from "./components/RadarBar.vue";
+import TotalData from "./components/TotalData.vue";
 import MapChart from "./components/MapChart.vue";
 import VerticalBar from "./components/VerticalBar.vue";
 
