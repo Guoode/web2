@@ -36,6 +36,7 @@ import TotalData from "./components/TotalData.vue";
 import MapChart from "./components/MapChart.vue";
 import VerticalBar from "./components/VerticalBar.vue";
 import Footer from "./components/Footer.vue";
+import ErrorLogModal from "./components/ErrorLogModal.vue";
 import { ref, onMounted, onUnmounted } from "vue";
 
 const data = ref({});
