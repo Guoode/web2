@@ -1,9 +1,11 @@
 <template>
-  <div>
-    <div>右竖向柱状图</div>
-  </div>
+  <baidu-map class="bm-view" :zoom="12" :center="{ lng: 116.404, lat: 39.915 }">
+  </baidu-map>
 </template>
 
-<script setup></script>
-
-<style lang="scss" scoped></style>
+<style>
+.bm-view {
+  width: 100%;
+  height: 300px;
+}
+</style>
