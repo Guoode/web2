@@ -7,6 +7,7 @@
       :scroll-wheel-zoom="true"
     >
       <bm-panorama :longitude="116.404" :latitude="39.915"></bm-panorama>
+      <bm-scale anchor="BMAP_ANCHOR_TOP_RIGHT"></bm-scale>
     </baidu-map>
   </div>
 </template>
