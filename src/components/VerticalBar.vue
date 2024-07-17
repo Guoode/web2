@@ -1,11 +1,14 @@
 <template>
-  <baidu-map class="bm-view" :zoom="12" :center="{ lng: 116.404, lat: 39.915 }">
-  </baidu-map>
+  <div class="log-container">显示日志</div>
 </template>
 
-<style>
-.bm-view {
+<style scoped>
+.log-container {
+  /* 占据全部视窗高度 */
+  height: 100vh;
+
+  /* 其他样式 */
   width: 100%;
-  height: 300px;
+  overflow-y: auto; /* 允许内容超出时滚动 */
 }
 </style>
