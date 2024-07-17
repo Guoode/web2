@@ -2,19 +2,36 @@
   <div class="map-container">
     <baidu-map
       class="map"
-      :center="{ lng: 116.404, lat: 39.915 }"
+      :center="{ lng: centerLng, lat: centerLat }"
       :zoom="15"
       :scroll-wheel-zoom="true"
     >
       <bm-panorama :longitude="116.404" :latitude="39.915"></bm-panorama>
       <bm-scale anchor="BMAP_ANCHOR_TOP_RIGHT"></bm-scale>
+      <bm-geolocation
+        anchor="BMAP_ANCHOR_BOTTOM_RIGHT"
+        :showAddressBar="true"
+        @locationSuccess="locationSuccess"
+      ></bm-geolocation>
     </baidu-map>
   </div>
 </template>
 
 <script>
 export default {
-  // 组件相关的逻辑代码 (如果有的话)
+  data() {
+    return {
+      centerLng: 116.404, // 默认经度
+      centerLat: 39.915, // 默认纬度
+    };
+  },
+  methods: {
+    locationSuccess(e) {
+      // 定位成功回调函数
+      this.centerLng = e.point.lng;
+      this.centerLat = e.point.lat;
+    },
+  },
 };
 </script>
 
